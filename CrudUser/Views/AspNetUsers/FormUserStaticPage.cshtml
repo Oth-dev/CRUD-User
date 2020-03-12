@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "FormUserStaticPage";
+}
+
+<h2>Form User Static Page</h2>
+
+
+
+
+<form action="#" method="post">
+    <hr />
+
+
+    <div class="form-group">
+        <label class="control-label col-md-2">First Name*</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" name="fname" required minlength="3" type="text" />
+        </div>
+    </div>
+    
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Last Name*</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" requiredname="lname" type="text" minlength="3" />
+        </div>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label class="control-label col-md-2">City*</label>
+        <div class="col-md-10">
+            <select class="form-control text-box single-line" name="city" required>
+                <option value="" >Select a City</option>
+                <option value="Chicago">Chicago</option>
+                <option value="New York City">New York City</option>
+                <option value="Arlington">Arlington</option>
+                <option value="Jersey City">Jersey City</option>
+                <option value="Falls Church">Falls Church</option>
+                <option value="DC">DC</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        <label class="control-label col-md-2" name="zipcode">ZipCode*</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" type="text" pattern="[0-9]{5}" title="Five digit zip code" required />        </div>
+    </div>
+    <br />
+
+    <div class="col-md-10">
+        <input type="submit" value="Create" />
+        <span class="field-validation-valid text-danger"></span>
+    </div>
+
+
+</form>
